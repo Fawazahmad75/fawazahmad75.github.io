@@ -557,20 +557,25 @@
     width: 100%;
     margin-top: 32px;
     padding: 18px 24px;
-    background: none;
-    border: 1.5px solid var(--ink);
+    background: rgba(26, 24, 20, 0.12);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1.5px solid rgba(26, 24, 20, 0.35);
     cursor: pointer;
     font-family: var(--mono);
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: .18em;
     color: var(--ink);
-    transition: background .2s, color .2s;
+    transition: background .2s, color .2s, border-color .2s;
     text-align: center;
   }
   .deep-dive-toggle:hover,
   .deep-dive-toggle[aria-expanded="true"] {
-    background: var(--ink);
+    background: rgba(26, 24, 20, 0.82);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-color: var(--ink);
     color: var(--paper);
   }
   .deep-dive-panel {
@@ -1515,7 +1520,7 @@
         <h3>Retail Customer<br>Intelligence <em>Engine</em></h3>
         <div class="subtitle">Churn prediction · RFM segmentation · Sentiment routing</div>
 
-        <a class="preview" href="https://retail-cutomer-engine.streamlit.app/" target="_blank" rel="noopener">
+        <a class="preview" href="https://retailq.streamlit.app/" target="_blank" rel="noopener">
           <div class="placeholder">
             <div class="big">churn-demo.gif</div>
             hover to play preview
@@ -1861,7 +1866,7 @@ Training:  100 epochs, batch size 32, StandardScaler features
         </div>
 
         <div class="links-row">
-          <a href="https://retail-cutomer-engine.streamlit.app/" target="_blank" rel="noopener" class="primary">Live Demo ↗</a>
+          <a href="https://retailq.streamlit.app/" target="_blank" rel="noopener" class="primary">Live Demo ↗</a>
           <a href="https://github.com/Fawazahmad75/retail-customer-intelligence-engine" target="_blank" rel="noopener">Source Code</a>
         </div>
       </div>
@@ -1891,13 +1896,13 @@ Training:  100 epochs, batch size 32, StandardScaler features
         <h3>RAG Document<br><em>Assistant</em></h3>
         <div class="subtitle">Hybrid retrieval · Reciprocal rank fusion · Cited answers</div>
 
-        <a class="preview" href="https://rag-pipeline-production.up.railway.app/docs" target="_blank" rel="noopener">
+        <a class="preview" href="https://docpall.streamlit.app/" target="_blank" rel="noopener">
           <div class="placeholder">
             <div class="big">rag-demo.gif</div>
             hover to play preview
           </div>
           <img class="motion" src="rag-demo.gif" alt="RAG pipeline demo" onerror="this.style.display='none'">
-          <div class="hint">↗ OPEN LIVE API</div>
+          <div class="hint">↗ OPEN LIVE DEMO</div>
         </a>
 
         <div class="metrics-strip">
@@ -2086,7 +2091,7 @@ QUESTION: {user_query}</pre>
         </div>
 
         <div class="links-row">
-          <a href="https://rag-pipeline-production.up.railway.app/docs" target="_blank" rel="noopener" class="primary">Live API ↗</a>
+          <a href="https://docpall.streamlit.app/" target="_blank" rel="noopener" class="primary">Live Demo ↗</a>
           <a href="https://github.com/Fawazahmad75/rag-pipeline" target="_blank" rel="noopener">Source Code</a>
         </div>
       </div>
@@ -2151,7 +2156,7 @@ QUESTION: {user_query}</pre>
       <a href="mailto:sarfawib@gmail.com">Email</a>
       <a href="https://github.com/Fawazahmad75" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/fawaz-ahmad123/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://retail-cutomer-engine.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
+      <a href="https://retailq.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
     </div>
   </div>
 </section>
